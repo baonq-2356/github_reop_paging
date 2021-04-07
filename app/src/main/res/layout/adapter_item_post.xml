@@ -20,14 +20,6 @@
         android:orientation="vertical">
 
         <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/userId"
-            style="@android:style/TextAppearance.Medium"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@{Html.fromHtml(@string/format_content(`userId`, post.userId + ``))}"
-            tools:text="userId" />
-
-        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/id"
             style="@android:style/TextAppearance.Medium"
             android:layout_width="match_parent"
@@ -42,13 +34,5 @@
             android:layout_height="wrap_content"
             android:text="@{Html.fromHtml(@string/format_content(`title`, post.title))}"
             tools:text="title" />
-
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/body"
-            style="@android:style/TextAppearance.Medium"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@{Html.fromHtml(@string/format_content(`body`, post.body))}"
-            tools:text="body" />
     </LinearLayout>
 </layout>

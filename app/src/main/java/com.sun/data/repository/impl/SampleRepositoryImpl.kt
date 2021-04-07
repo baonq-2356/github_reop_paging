@@ -13,5 +13,5 @@ import javax.inject.Singleton
 class SampleRepositoryImpl @Inject constructor(
     private val api: ApiServiceInterface
 ) : SampleRepository {
-    override suspend fun getPosts(): List<Post> = api.getPosts()
+    override suspend fun getPosts(page: Int, perPage: Int): List<Post> = api.getPosts(page, perPage)
 }

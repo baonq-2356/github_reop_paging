@@ -57,7 +57,7 @@ android {
         develop {
             versionNameSuffix = "-dev"
             applicationIdSuffix = ".dev"
-            buildConfigField "String", URL_END_POINT, '"https://jsonplaceholder.typicode.com/"'
+            buildConfigField "String", URL_END_POINT, '"https://api.github.com/"'
         }
         staging {
             versionNameSuffix = "-staging"

@@ -37,6 +37,7 @@ class SampleActivity : BaseActivity<ActivitySampleBinding, SampleViewModel>() {
 
         viewModel.posts.observe(this, Observer {
             it?.let {
+                val a = it
                 adapter.submitList(it)
             }
         })

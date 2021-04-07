@@ -16,7 +16,7 @@ class SampleAdapter(private val callback: ((Post) -> Unit)?) :
             oldItem.id == newItem.id
 
         override fun areContentsTheSame(oldItem: Post, newItem: Post): Boolean =
-            oldItem.body == newItem.body
+            oldItem.title == newItem.title
     }) {
     override fun createBinding(parent: ViewGroup, viewType: Int?): ViewDataBinding =
         DataBindingUtil.inflate<AdapterItemPostBinding>(
