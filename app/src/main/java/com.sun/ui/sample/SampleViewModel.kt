@@ -30,7 +30,7 @@ class SampleViewModel @Inject constructor(
         viewModelScopeExceptionHandler.launch {
             withContext(Dispatchers.IO){
                 posts.postValue(
-                        repository.getPosts(1, 10)
+                        repository.getPosts(1, 50)
                 )
             }
         }
